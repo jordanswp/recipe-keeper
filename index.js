@@ -108,7 +108,7 @@ app.get('/recipes/:id/edit', (request,response)=>{
         const index = parseInt(request.params.id)-1;
         const data = {
             id : index + 1,
-            recipeName: obj.recipes[index-1].name,
+            recipeName: obj.recipes[index].name,
             ingredients: obj.recipes[index].ingredients,
             instructions: obj.recipes[index].instructions
         }

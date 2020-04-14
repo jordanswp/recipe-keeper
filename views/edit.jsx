@@ -26,9 +26,9 @@ class Edit extends React.Component {
           <h1>Edit Page</h1>
           <form method="POST" action={link}>
             <p>Recipe Number</p>
-            <input name="recipe name" value={this.props.id}/>
+            <input name="recipe number" value={this.props.id}/>
             <p>Recipe Name</p>
-            <input name="recipe name" value={this.props.name}/>
+            <input name="name" value={this.props.recipeName}/>
             <p>Ingredients</p>
             <input name="ingredients" value={this.props.ingredients}/>
             <p>Instructions</p>
